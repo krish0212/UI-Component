@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Components Library</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="page-title">UI Component Library</h1>
+
+        <section class="component-wrapper">
+            <span class="badge">1. Navigation Bar</span>
+            <nav class="navbar">
+                <div class="logo">BrandLogo</div>
+                <div class="nav-links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </section>
+
+        <div class="grid-3-col">
+            
+            <section class="component-wrapper">
+                <span class="badge">2. Profile Card</span>
+                <div class="card profile-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80" alt="Anjali Sharma" class="profile-img">
+                    <h3 class="profile-name">Anjali Sharma</h3>
+                    <p class="profile-title">Frontend Developer</p>
+                    <p class="profile-desc">Passionate developer who loves building simple and beautiful web applications.</p>
+                    <button class="btn btn-primary btn-follow">Follow</button>
+                </div>
+            </section>
+
+            <section class="component-wrapper">
+                <span class="badge">3. Login Form</span>
+                <div class="card login-card">
+                    <h3 class="form-title">Login</h3>
+                    <form onsubmit="event.preventDefault();" class="login-form">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password">
+                        </div>
+                        <button type="submit" class="btn btn-blue btn-block">Login</button>
+                    </form>
+                    <div class="form-footer">
+                        <a href="#">Forgot password?</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="component-wrapper">
+                <span class="badge">4. Product Card</span>
+                <div class="card product-card">
+                    <div class="product-icon-wrapper">
+                        <i class="fa-solid fa-headphones"></i>
+                    </div>
+                    <h3 class="product-name">Wireless Headphones</h3>
+                    <p class="product-desc">High quality sound with noise cancellation.</p>
+                    <p class="product-price">$59.99</p>
+                    <button class="btn btn-emerald btn-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="grid-custom-split">
+            
+            <section class="component-wrapper">
+                <span class="badge">5. Dashboard Layout</span>
+                <div class="card dashboard-card">
+                    <aside class="sidebar">
+                        <a href="#" class="sidebar-link active"><i class="fa-solid fa-house"></i> Dashboard</a>
+                        <a href="#" class="sidebar-link"><i class="fa-solid fa-user"></i> Users</a>
+                        <a href="#" class="sidebar-link"><i class="fa-solid fa-chart-simple"></i> Analytics</a>
+                        <a href="#" class="sidebar-link"><i class="fa-solid fa-gear"></i> Settings</a>
+                        <a href="#" class="sidebar-link logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a>
+                    </aside>
+                    <main class="dashboard-main">
+                        <h4 class="welcome-text">Welcome, Admin!</h4>
+                        <div class="metrics-grid">
+                            <div class="metric-box box-blue"><strong>120</strong><span>Total Users</span></div>
+                            <div class="metric-box box-emerald"><strong>45</strong><span>New Users</span></div>
+                            <div class="metric-box box-purple"><strong>320</strong><span>Total Orders</span></div>
+                            <div class="metric-box box-amber"><strong>12</strong><span>Pending</span></div>
+                        </div>
+                        <div class="activity-section">
+                            <h5 class="section-subtitle">Recent Activity</h5>
+                            <table class="activity-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Action</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>John Doe</td><td>Login</td><td class="txt-muted">20 May 2024</td></tr>
+                                    <tr><td>Jane Smith</td><td class="txt-emerald">Added Item</td><td class="txt-muted">20 May 2024</td></tr>
+                                    <tr><td>Mike Brown</td><td>Update</td><td class="txt-muted">19 May 2024</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </main>
+                </div>
+            </section>
+
+            <section class="component-wrapper">
+                <span class="badge">6. Image Gallery</span>
+                <div class="card gallery-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=300&q=80" alt="Mountain Lake">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=300&q=80" alt="Waterfall">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80" alt="Coastline">
+                    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=300&q=80" alt="Forest Path">
+                    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=300&q=80" alt="Sunset Mountains">
+                    <img src="https://images.unsplash.com/photo-1433832597046-4f10e10ac764?auto=format&fit=crop&w=300&q=80" alt="Lake Boat">
+                </div>
+            </section>
+
+        </div>
+
+        <section class="component-wrapper">
+            <span class="badge">7. Pricing Table</span>
+            <div class="grid-3-col pricing-wrapper">
+                <div class="card pricing-card">
+                    <h4 class="plan-name">Basic</h4>
+                    <div class="plan-price"><strong>$9</strong><span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>1 Website</li>
+                        <li>10 GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <button class="btn btn-outline">Choose Plan</button>
+                </div>
+                <div class="card pricing-card popular">
+                    <div class="popular-ribbon">Popular</div>
+                    <div class="pricing-card-inner">
+                        <h4 class="plan-name">Standard</h4>
+                        <div class="plan-price"><strong>$19</strong><span>/month</span></div>
+                        <ul class="plan-features">
+                            <li>5 Websites</li>
+                            <li>50 GB Storage</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <button class="btn btn-blue">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="card pricing-card">
+                    <h4 class="plan-name">Premium</h4>
+                    <div class="plan-price"><strong>$29</strong><span>/month</span></div>
+                    <ul class="plan-features">
+                        <li>Unlimited Websites</li>
+                        <li>100 GB Storage</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button class="btn btn-outline">Choose Plan</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="component-wrapper">
+            <span class="badge">8. Landing Page Hero Section</span>
+            <div class="card hero-card">
+                <div class="hero-text-side">
+                    <h2>Build Your<br>Dream Project</h2>
+                    <p>We help you build amazing web experiences with clean and modern design.</p>
+                    <button class="btn btn-blue btn-lg">Get Started</button>
+                </div>
+                <div class="hero-graphic-side">
+                    <div class="mockup-window">
+                        <div class="mockup-header">
+                            <div class="mockup-lines">
+                                <span class="line-long"></span>
+                                <span class="line-short"></span>
+                            </div>
+                            <div class="mockup-icon">&lt;/&gt;</div>
+                        </div>
+                        <div class="mockup-body">
+                            <div class="mockup-box"><span></span><span></span></div>
+                            <div class="mockup-box"><span></span><span></span></div>
+                        </div>
+                        <div class="mockup-footer">
+                            <div class="mockup-settings-icon"><i class="fa-solid fa-gear"></i></div>
+                        </div>
+                    </div>
+                    <div class="plant-icon"><i class="fa-solid fa-seedling"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="component-wrapper">
+            <span class="badge">9. Footer</span>
+            <footer class="footer">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <h4>MyCompany</h4>
+                        <p>We create amazing digital experiences for your business.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Support</h4>
+                        <a href="#">Help Center</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2024 MyCompany. All Rights Reserved.
+                </div>
+            </footer>
+        </section>
+
+    </div>
+
+</body>
+</html>                             
